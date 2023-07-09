@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="5dp"
+    android:background="@color/Black"
+    android:backgroundTint="@color/White"
+    android:orientation="vertical"
+    app:barrierMargin="@dimen/material_emphasis_high_type"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:layout_anchorGravity="center_vertical"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:id="@+id/layoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/no_img"
+            app:strokeColor="@color/Black"
+            app:strokeWidth="5dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textBookName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imageView"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:maxLines="2"
+            android:textAlignment="textStart"
+            android:textColor="@color/Red"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textBookAuthor"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/textBookName"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imageView"
+            android:fontFamily="sans-serif"
+            android:textAlignment="textStart"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textBookPublisher"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/textBookAuthor"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imageView"
+            android:fontFamily="sans-serif"
+            android:textAlignment="textStart"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtBookISBN"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/textBookPublisher"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imageView"
+            android:fontFamily="sans-serif"
+            android:textAlignment="textStart"
+            android:textColor="@color/Black" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkBoxBookIsRead"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/txtBookISBN"
+            android:layout_toEndOf="@id/imageView"
+            android:fontFamily="sans-serif"
+            android:text="Okundu"
+            android:textAlignment="textStart"
+            app:useMaterialThemeColors="false" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkBoxBookInLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/checkBoxBookIsRead"
+            android:layout_toEndOf="@id/imageView"
+            android:fontFamily="sans-serif"
+            android:text="Kütüphanede"
+            android:textAlignment="textStart" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
