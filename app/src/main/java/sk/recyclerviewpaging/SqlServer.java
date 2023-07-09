@@ -14,9 +14,9 @@ public class SqlServer {
 	public Connection Connect() {
 		String ip = "192.168.1.99";
 		String port = "1433";
-		String db = "CodeSK";
+		String db = "database";
 		String username = "sa";
-		String password = "Fb*9865563799";
+		String password = "*********";
 
 		StrictMode.ThreadPolicy builder = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 		StrictMode.setThreadPolicy(builder);
